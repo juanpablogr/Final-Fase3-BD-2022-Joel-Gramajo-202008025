@@ -42,5 +42,10 @@ namespace Fase3_BD_2022_Joel_Gramajo
 
             return outputData;
         }
+
+        public string GetFieldOfSelectedRowFromDataGridView(DataGridView gb, int indexOfField)
+        {
+            return gb.Rows[gb.SelectedCells[0].RowIndex].Cells[indexOfField].Value.ToString();
+        }
     }
 }

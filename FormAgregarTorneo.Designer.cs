@@ -74,7 +74,7 @@
             this.dateTimePicker3.Location = new System.Drawing.Point(190, 152);
             this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(363, 20);
+            this.dateTimePicker3.Size = new System.Drawing.Size(618, 20);
             this.dateTimePicker3.TabIndex = 62;
             // 
             // dateTimePicker2
@@ -82,7 +82,7 @@
             this.dateTimePicker2.Location = new System.Drawing.Point(190, 129);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(363, 20);
+            this.dateTimePicker2.Size = new System.Drawing.Size(618, 20);
             this.dateTimePicker2.TabIndex = 61;
             // 
             // dateTimePicker1
@@ -90,7 +90,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(190, 107);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(363, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(618, 20);
             this.dateTimePicker1.TabIndex = 60;
             // 
             // textBox3
@@ -99,7 +99,7 @@
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(363, 83);
+            this.textBox3.Size = new System.Drawing.Size(618, 83);
             this.textBox3.TabIndex = 59;
             // 
             // textBox2
@@ -107,7 +107,7 @@
             this.textBox2.Location = new System.Drawing.Point(214, 84);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(338, 20);
+            this.textBox2.Size = new System.Drawing.Size(593, 20);
             this.textBox2.TabIndex = 58;
             // 
             // textBox1
@@ -115,7 +115,7 @@
             this.textBox1.Location = new System.Drawing.Point(190, 61);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(363, 20);
+            this.textBox1.Size = new System.Drawing.Size(618, 20);
             this.textBox1.TabIndex = 57;
             // 
             // label8
@@ -192,10 +192,11 @@
             // 
             this.button4.Location = new System.Drawing.Point(29, 792);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(523, 35);
+            this.button4.Size = new System.Drawing.Size(778, 35);
             this.button4.TabIndex = 72;
             this.button4.Text = "Guardar información del torneo";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label18
             // 
@@ -257,7 +258,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(190, 264);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(363, 111);
+            this.dataGridView1.Size = new System.Drawing.Size(618, 111);
             this.dataGridView1.TabIndex = 73;
             // 
             // dataGridView2
@@ -269,7 +270,7 @@
             this.dataGridView2.Location = new System.Drawing.Point(115, 441);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(435, 111);
+            this.dataGridView2.Size = new System.Drawing.Size(690, 111);
             this.dataGridView2.TabIndex = 74;
             // 
             // dataGridView3
@@ -281,7 +282,7 @@
             this.dataGridView3.Location = new System.Drawing.Point(115, 558);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.Size = new System.Drawing.Size(435, 111);
+            this.dataGridView3.Size = new System.Drawing.Size(690, 111);
             this.dataGridView3.TabIndex = 75;
             // 
             // dataGridView4
@@ -293,14 +294,14 @@
             this.dataGridView4.Location = new System.Drawing.Point(115, 675);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.Size = new System.Drawing.Size(435, 111);
+            this.dataGridView4.Size = new System.Drawing.Size(690, 111);
             this.dataGridView4.TabIndex = 76;
             // 
             // FormAgregarTorneo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(581, 841);
+            this.ClientSize = new System.Drawing.Size(837, 841);
             this.Controls.Add(this.dataGridView4);
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView2);
@@ -330,6 +331,7 @@
             this.Name = "FormAgregarTorneo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAgregarTorneo";
+            this.Load += new System.EventHandler(this.FormAgregarTorneo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
