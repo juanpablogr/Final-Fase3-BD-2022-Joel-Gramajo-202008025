@@ -75,6 +75,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(692, 232);
             this.dataGridView1.TabIndex = 67;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // dataGridView2
             // 
@@ -87,6 +88,7 @@
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(692, 165);
             this.dataGridView2.TabIndex = 69;
+            this.dataGridView2.SelectionChanged += new System.EventHandler(this.dataGridView2_SelectionChanged);
             // 
             // label1
             // 
@@ -126,6 +128,7 @@
             this.button2.TabIndex = 74;
             this.button2.Text = "Guardar datos";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox5
             // 
@@ -160,6 +163,7 @@
             this.Controls.Add(this.label26);
             this.Name = "FormResultadoRonda";
             this.Text = "FormResultadoRonda";
+            this.Load += new System.EventHandler(this.FormResultadoRonda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
