@@ -72,6 +72,8 @@ namespace Fase3_BD_2022_Joel_Gramajo
                     "" + b + "," +
                     "" + w3 + "" +
                     ")");
+
+                this.Dispose();
             }
             catch (Exception ex)
             {

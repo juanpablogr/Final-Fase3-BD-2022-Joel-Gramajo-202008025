@@ -54,6 +54,8 @@ namespace Fase3_BD_2022_Joel_Gramajo
                     "TO_DATE('" +  DateTime.Parse(maskedTextBox1.Text) + "', 'MM/DD/AAAA HH:mm')," +
                     "" + c + "" +
                     ")");
+
+                this.Dispose();
             }
             catch (Exception ex)
             {
