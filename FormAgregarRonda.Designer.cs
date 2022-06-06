@@ -105,6 +105,7 @@
             this.button2.TabIndex = 64;
             this.button2.Text = "Agregar Ronda a torneo";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
@@ -121,6 +122,9 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(531, 287);
             this.dataGridView1.TabIndex = 66;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
             // label2
             // 
@@ -148,6 +152,7 @@
             this.Controls.Add(this.label19);
             this.Name = "FormAgregarRonda";
             this.Text = "FormAgregarRonda";
+            this.Load += new System.EventHandler(this.FormAgregarRonda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
