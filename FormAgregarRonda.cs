@@ -51,7 +51,7 @@ namespace Fase3_BD_2022_Joel_Gramajo
                 copilot.ExecuteCommand("Insert Into Ronda (NumeroRonda, DescripRonda, FechaHora, IdTorneo) values (" +
                     "" + label1.Text + "," +
                     "'" + textBox4.Text + "'," +
-                    "TO_DATE('" +  DateTime.Parse(maskedTextBox1.Text) + "', 'MM/DD/AAAA HH:mm')," +
+                    "'" +  DateTime.Parse(maskedTextBox1.Text).ToString("g") + "'," +
                     "" + c + "" +
                     ")");
 
