@@ -23,7 +23,7 @@ namespace Fase3_BD_2022_Joel_Gramajo
         void RefreshInforme1()
         {
             dataGridView8.DataSource = copilot.ExecuteCommand("Select Sum(CantidadRecibida) as Total From Inscribe Where FechaRecibo between '" + dateTimePicker1.Value.ToString("d") + "' and '" + dateTimePicker2.Value.ToString("d") + "'");
-            //dataGridView1.DataSource = copilot.ExecuteCommand("Select T.NombreTorneo, Sum(I.CantidadRecibida) Where T.IdTorneo=I.IdTorneo Group by T.NombreTorneo");
+            dataGridView1.DataSource = copilot.ExecuteCommand("Select T.NombreTorneo, Sum(I.CantidadRecibida) From Torneo as T, Inscribe as I Where T.IdTorneo=I.IdTorneo and I.FechaRecibo between '" + dateTimePicker1.Value.ToString("d") + "' and '" + dateTimePicker2.Value.ToString("d") + "'" + " Group by T.NombreTorneo");
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
