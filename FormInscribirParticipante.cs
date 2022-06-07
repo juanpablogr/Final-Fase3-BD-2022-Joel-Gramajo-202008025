@@ -34,7 +34,7 @@ namespace Fase3_BD_2022_Joel_Gramajo
                 string idtorneo = copilot.GetFieldOfSelectedRowFromDataGridView(dataGridView1, 0);
 
                 copilot.ExecuteCommand("Insert Into Inscribe (FechaRecibo, CantidadRecibida, NickName, Idtorneo) values (" +
-                    "TO_DATE('" + DateTime.Now.ToString("d") + "', 'MM/DD/AAAA')," +
+                    "'" + DateTime.Now.ToString("d") + "'," +
                     "" + costo + "," +
                     "'" + nickname + "'," +
                     "" + idtorneo + "" +

@@ -13,6 +13,7 @@ namespace Fase3_BD_2022_Joel_Gramajo
     public partial class FormResultadoRonda : Form
     {
         Copilot copilot = new Copilot();
+        bool ban = false;
 
         public FormResultadoRonda()
         {
@@ -22,18 +23,24 @@ namespace Fase3_BD_2022_Joel_Gramajo
         private void FormResultadoRonda_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = copilot.ExecuteCommand("Select * From Torneo");
+            MessageBox.Show("Torneos cargados con exito!");
+            ban = true;
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            string a = copilot.GetFieldOfSelectedRowFromDataGridView(dataGridView1, 0);
-            dataGridView2.DataSource = copilot.ExecuteCommand("Select * From Ronda Where IdTorneo=" + a);
+            if (ban)
+            {
+                string a = copilot.GetFieldOfSelectedRowFromDataGridView(dataGridView1, 0);
+                dataGridView2.DataSource = copilot.ExecuteCommand("Select * From Ronda Where IdTorneo=" + a);
+                dataGridView3.DataSource = copilot.ExecuteCommand("Select * From Inscribe Where IdTorneo=" + a);
+            }
         }
 
         private void dataGridView2_SelectionChanged(object sender, EventArgs e)
         {
-            string a = copilot.GetFieldOfSelectedRowFromDataGridView(dataGridView1, 0); // IdTorneo
-            dataGridView3.DataSource = copilot.ExecuteCommand("Select * From Inscribe Where IdTorneo=" + a);
+            //string a = copilot.GetFieldOfSelectedRowFromDataGridView(dataGridView1, 0); // IdTorneo
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -48,7 +55,7 @@ namespace Fase3_BD_2022_Joel_Gramajo
                     "" + 0 + "," +
                     "" + textBox5.Text + "," +
                     "'" + a + "'," +
-                    "" + b + "," +
+                    "" + b + "" +
                     ")");
 
                 this.Dispose();

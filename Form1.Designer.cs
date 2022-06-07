@@ -57,7 +57,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(256, 302);
+            this.button2.Location = new System.Drawing.Point(408, 302);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(146, 68);
             this.button2.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(408, 302);
+            this.button3.Location = new System.Drawing.Point(560, 302);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(146, 68);
             this.button3.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(560, 302);
+            this.button4.Location = new System.Drawing.Point(256, 302);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(146, 68);
             this.button4.TabIndex = 3;
@@ -108,7 +108,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Fase3_BD_2022_Joel_Gramajo.Properties.Resources.torneo;
-            this.pictureBox4.Location = new System.Drawing.Point(560, 146);
+            this.pictureBox4.Location = new System.Drawing.Point(256, 146);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(146, 150);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,7 +118,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Fase3_BD_2022_Joel_Gramajo.Properties.Resources.medal;
-            this.pictureBox3.Location = new System.Drawing.Point(408, 146);
+            this.pictureBox3.Location = new System.Drawing.Point(560, 146);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(146, 150);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -128,7 +128,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Fase3_BD_2022_Joel_Gramajo.Properties.Resources.mando;
-            this.pictureBox2.Location = new System.Drawing.Point(256, 146);
+            this.pictureBox2.Location = new System.Drawing.Point(408, 146);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(146, 150);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -149,7 +149,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 524);
+            this.ClientSize = new System.Drawing.Size(1264, 524);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
