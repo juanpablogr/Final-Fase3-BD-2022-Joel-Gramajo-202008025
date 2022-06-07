@@ -45,7 +45,7 @@ namespace Fase3_BD_2022_Joel_Gramajo
             dataGridView7.DataSource = copilot.ExecuteCommand("Select * From Torneo");
             dataGridView6.DataSource = copilot.ExecuteCommand("Select * From Torneo");
             dataGridView4.DataSource = copilot.ExecuteCommand("Select NickName, Count(*) as Total From Participa Group by NickName Order by Total desc");
-            dataGridView5.DataSource = copilot.ExecuteCommand("Select * From Torneo Where FechaRealiza <= '" + DateTime.Now.ToString("d") + "'");
+            dataGridView5.DataSource = copilot.ExecuteCommand("Select * From Torneo Where FechaRealiza >= '" + DateTime.Now.ToString("d") + "'");
             ban = true;
         }
 
