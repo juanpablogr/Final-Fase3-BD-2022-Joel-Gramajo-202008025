@@ -57,6 +57,7 @@
             this.button1.TabIndex = 57;
             this.button1.Text = "Inscribir participante al torneo y generar recibo";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label12
             // 
@@ -113,6 +114,7 @@
             this.Controls.Add(this.label12);
             this.Name = "FormInscribirParticipante";
             this.Text = "FormInscribirParticipante";
+            this.Load += new System.EventHandler(this.FormInscribirParticipante_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
