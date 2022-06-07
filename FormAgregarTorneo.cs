@@ -42,13 +42,15 @@ namespace Fase3_BD_2022_Joel_Gramajo
                 copilot.ExecuteCommand("Insert Into Torneo (NombreTorneo, CostoInscrip, FechaApertInsc, FechaFinInsc, FechaRealiza, DescTorneo, NumeroRondas, IdVideojuego) values (" +
                     "'" + textBox1.Text + "'," +
                     "" + textBox2.Text + "," +
-                    "TO_DATE('" + dateTimePicker1.Value.ToString("d") + "', 'MM/DD/AAAA')," +
-                    "TO_DATE('" + dateTimePicker2.Value.ToString("d") + "', 'MM/DD/AAAA')," +
-                    "TO_DATE('" + dateTimePicker3.Value.ToString("d") + "', 'MM/DD/AAAA')," +
+                    "'" + dateTimePicker1.Value.ToString("d") + "'," +
+                    "'" + dateTimePicker2.Value.ToString("d") + "'," +
+                    "'" + dateTimePicker3.Value.ToString("d") + "'," +
                     "'" + textBox3.Text + "'," +
                     "" + 0 + "," +
                     "" + idv + "" +
                     ")");
+
+                MessageBox.Show("Torneo agregado con exito!");
 
 
                 DataTable a = copilot.ExecuteCommand("Select * From Torneo");
